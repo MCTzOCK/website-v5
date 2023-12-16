@@ -18,7 +18,6 @@ import {
   ListIcon,
   ListItem,
   Text,
-  UnorderedList,
 } from "@chakra-ui/react";
 import { FaDiscord, FaEnvelope, FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
