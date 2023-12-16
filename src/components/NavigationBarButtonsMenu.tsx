@@ -40,6 +40,7 @@ export default function NavigationBarButtonsMenu(props: {
           onClick={props.onClose}
           w={["100%", "auto"]}
           size={"lg"}
+          justifyContent={"start"}
         >
           Home
         </Button>
@@ -51,6 +52,7 @@ export default function NavigationBarButtonsMenu(props: {
           onClick={props.onClose}
           w={["100%", "auto"]}
           size={"lg"}
+          justifyContent={"start"}
         >
           About me
         </Button>
@@ -62,6 +64,7 @@ export default function NavigationBarButtonsMenu(props: {
           onClick={props.onClose}
           w={["100%", "auto"]}
           size={"lg"}
+          justifyContent={"start"}
         >
           My Projects
         </Button>
@@ -73,6 +76,7 @@ export default function NavigationBarButtonsMenu(props: {
           onClick={props.onClose}
           w={["100%", "auto"]}
           size={"lg"}
+          justifyContent={"start"}
         >
           Contact
         </Button>
@@ -84,6 +88,7 @@ export default function NavigationBarButtonsMenu(props: {
           onClick={props.onClose}
           w={["100%", "auto"]}
           size={"lg"}
+          justifyContent={"start"}
         >
           Blog
         </Button>
