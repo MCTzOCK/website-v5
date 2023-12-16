@@ -12,6 +12,8 @@ import * as React from "react";
 import { Component } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "@/theme/chakra";
+import NavigationBar from "@/components/NavigationBar";
+import Footer from "@/components/Footer";
 
 export default function AppLayout({
   Component,
@@ -22,7 +24,9 @@ export default function AppLayout({
 }) {
   return (
     <ChakraProvider theme={theme}>
+      <NavigationBar />
       <Component {...pageProps} />
+      <Footer />
     </ChakraProvider>
   );
 }

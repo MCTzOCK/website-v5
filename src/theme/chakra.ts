@@ -46,7 +46,6 @@ export const theme = extendTheme({
     heading: "Geist, sans-serif",
     mono: "Geist, sans-serif",
   },
-  // default heading color: brand.500
   components: {
     Button: {
       variants: {
@@ -55,6 +54,9 @@ export const theme = extendTheme({
           color: "white",
           _hover: {
             bg: "brand.600",
+          },
+          _active: {
+            bg: "brand.700",
           },
         },
       },
