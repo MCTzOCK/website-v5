@@ -11,29 +11,17 @@
 import * as React from "react";
 import {
   Box,
-  Button,
-  chakra,
   Divider,
-  Flex,
   Heading,
   HStack,
   IconButton,
-  Image,
   Link,
   LinkProps,
   Stack,
   Text,
   VStack,
 } from "@chakra-ui/react";
-import {
-  FaGithub,
-  FaInstagram,
-  FaLinkedin,
-  FaLinkedinIn,
-  FaTwitter,
-} from "react-icons/fa";
-import NavigationBarButtonsMenu from "@/components/NavigationBarButtonsMenu";
-
+import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 const Footer = () => {
   return (
     <Box w={"100%"} backgroundColor={"black"}>
