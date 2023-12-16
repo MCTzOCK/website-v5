@@ -36,7 +36,7 @@ export default function Index() {
           gap={4}
         >
           <Image
-            src={"/assets/images/ben/1.jpeg"}
+            src={"/assets/images/ben/2.jpeg"}
             alt={"Ben Siebert"}
             width={[200, 64]}
             rounded={"lg"}

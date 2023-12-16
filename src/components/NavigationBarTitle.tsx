@@ -17,7 +17,7 @@ export default function NavigationBarTitle() {
     <>
       <Link href={"/"}>
         <Image
-          src={"/assets/images/ben/1.jpeg"}
+          src={"/assets/images/ben/2.jpeg"}
           alt={"Ben Siebert"}
           width={20}
           rounded={"lg"}
