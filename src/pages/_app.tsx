@@ -14,6 +14,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "@/theme/chakra";
 import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";
+import "@/theme/globals.css";
 
 export default function AppLayout({
   Component,

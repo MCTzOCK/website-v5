@@ -21,7 +21,6 @@ export default function NavigationBar() {
         bg={"black"}
         h={"fit-content"}
         padding={4}
-        mb={4}
         gap={4}
         alignItems={"center"}
         justifyContent={"space-between"}

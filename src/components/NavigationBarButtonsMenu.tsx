@@ -12,7 +12,12 @@ import * as React from "react";
 import { Button, Flex } from "@chakra-ui/react";
 import { FaBox, FaHome, FaProjectDiagram, FaRProject } from "react-icons/fa";
 import Link from "next/link";
-import { FaDiagramProject, FaPerson } from "react-icons/fa6";
+import {
+  FaDiagramProject,
+  FaEnvelope,
+  FaFileLines,
+  FaPerson,
+} from "react-icons/fa6";
 
 export default function NavigationBarButtonsMenu(props: {
   onClose: () => void;
@@ -59,6 +64,28 @@ export default function NavigationBarButtonsMenu(props: {
           size={"lg"}
         >
           My Projects
+        </Button>
+        <Button
+          variant={"ghost"}
+          leftIcon={<FaEnvelope />}
+          as={Link}
+          href={"/contact"}
+          onClick={props.onClose}
+          w={["100%", "auto"]}
+          size={"lg"}
+        >
+          Contact
+        </Button>
+        <Button
+          variant={"ghost"}
+          leftIcon={<FaFileLines />}
+          as={Link}
+          href={"/blog"}
+          onClick={props.onClose}
+          w={["100%", "auto"]}
+          size={"lg"}
+        >
+          Blog
         </Button>
       </Flex>
     </>
