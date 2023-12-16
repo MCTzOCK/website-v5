@@ -1,0 +1,13 @@
+/**
+ * src/theme/globals.css
+ *
+ * Author: Ben Siebert <hello@ben-siebert.de>
+ * Copyright: Copyright (c) 2018-2023 Ben Siebert. All rights reserved.
+ * License: Project License
+ * Created At: 16.12.2023
+ *
+ */
+@font-face {
+    font-family: Geist;
+    src: url("/assets/fonts/geist/GeistVariableVF.ttf") format("truetype");
+}
