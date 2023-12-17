@@ -10,6 +10,7 @@
 
 import * as React from "react";
 import { Head, Html, Main, NextScript } from "next/document";
+import { NextSeo } from "next-seo";
 
 export default function DocumentLayout() {
   return (

@@ -31,10 +31,14 @@ import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
 import { projects } from "@/projects";
 import Link from "next/link";
+import Head from "next/head";
 
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Projects by Ben Siebert - Software Engineer & Student</title>
+      </Head>
       <Box w={"100%"} minH={"100vh"} h={"fit-content"} bg={"black"}>
         <Flex
           w={"100%"}

@@ -20,10 +20,15 @@ import {
 } from "@chakra-ui/react";
 import { FaEnvelope } from "react-icons/fa6";
 import Link from "next/link";
+import { NextSeo } from "next-seo";
+import Head from "next/head";
 
 export default function Index() {
   return (
     <>
+      <Head>
+        <title>Ben Siebert - Software Engineer & Student</title>
+      </Head>
       <Box w={"100%"} minH={"100vh"} h={"fit-content"} bg={"black"}>
         <Flex
           w={"100%"}

@@ -21,10 +21,14 @@ import {
 } from "@chakra-ui/react";
 import { FaDiscord, FaEnvelope, FaLinkedin } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
+import Head from "next/head";
 
 export default function Contact() {
   return (
     <>
+      <Head>
+        <title>Contact Ben Siebert - Software Engineer & Student</title>
+      </Head>
       <Box w={"100%"} minH={"100vh"} h={"fit-content"} bg={"black"}>
         <Flex
           w={"100%"}

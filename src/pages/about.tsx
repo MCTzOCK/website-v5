@@ -23,10 +23,14 @@ import {
 } from "@chakra-ui/react";
 import { TypeAnimation } from "react-type-animation";
 import Timeline from "@/components/Timeline";
+import Head from "next/head";
 
 export default function About() {
   return (
     <>
+      <Head>
+        <title>About Ben Siebert - Software Engineer & Student</title>
+      </Head>
       <Box w={"100%"} minH={"100vh"} h={"fit-content"} bg={"black"} p={4}>
         <Flex
           w={"100%"}
