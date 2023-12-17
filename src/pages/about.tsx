@@ -51,7 +51,7 @@ export default function About() {
               <TabList>
                 <Tab>Overview</Tab>
                 <Tab>Projects</Tab>
-                <Tab>Prizes</Tab>
+                <Tab>Awards</Tab>
               </TabList>
               <TabPanels>
                 <TabPanel p={0}>
@@ -138,6 +138,87 @@ export default function About() {
                           text: "View project",
                           url: "/project/saveworld",
                         },
+                      },
+                    ]}
+                    title={""}
+                  />
+                </TabPanel>
+                <TabPanel>
+                  <Timeline
+                    milestones={[
+                      {
+                        id: 11,
+                        date: "2023 - CodeUp",
+                        title: "STARTUPTEENS",
+                        description: "2nd prize at the national competition",
+                      },
+                      {
+                        id: 10,
+                        date: "2023 - CodeUp",
+                        title: "Jugend forscht",
+                        description:
+                          "Participation at the nationwide competition",
+                        image: "/assets/images/ben/8.jpg",
+                      },
+                      {
+                        id: 9,
+                        date: "2023 - CodeUp",
+                        title: "Jugend forscht",
+                        description:
+                          "Special prize: participation at the Summer Academy JugendUnternimmt",
+                      },
+                      {
+                        id: 8,
+                        date: "2023 - CodeUp",
+                        title: "Jugend forscht",
+                        description: "1st prize at the landwide competition",
+                        image: "/assets/images/ben/7.jpg",
+                      },
+                      {
+                        id: 7,
+                        date: "2023 - CodeUp",
+                        title: "Jugend forscht",
+                        description: "Special prize by Hengst Filtration SE",
+                        image: "/assets/images/ben/6.jpg",
+                      },
+                      {
+                        id: 6,
+                        date: "2023 - CodeUp",
+                        title: "Jugend forscht",
+                        description: "1st prize at the regional competition",
+                      },
+                      {
+                        id: 5,
+                        date: "2022 - InCode",
+                        title: "Jugend forscht",
+                        description:
+                          "Speciel prize for the most creatively valuable work",
+                      },
+                      {
+                        id: 4,
+                        date: "2022 - InCode",
+                        title: "Jugend forscht",
+                        description: "1st prize at the landwide competition",
+                      },
+                      {
+                        id: 3,
+                        date: "2022 - InCode",
+                        title: "Jugend forscht",
+                        description: "1st prize at the regional competition",
+                      },
+                      {
+                        id: 2,
+                        date: "2021 - SenOS",
+                        title: "Jugend forscht",
+                        description: "1st prize at the regional competition",
+                      },
+                      {
+                        id: 1,
+                        date: "2020 - Decryptor",
+                        title: "Jugend forscht",
+                        description: "3rd prize at the regional competition",
+                        image:
+                          "https://download.ben-siebert.com/ben/JuFo2020-1.jpg",
                       },
                     ]}
                     title={""}
