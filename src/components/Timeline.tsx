@@ -117,8 +117,9 @@ const Card = ({ id, title, description, date, image, link }: CardProps) => {
       rounded="lg"
       alignItems="center"
       pos="relative"
+      w={"100%"}
     >
-      <Box>
+      <Box w={"100%"}>
         {image && <Image src={image} rounded={"xl"} mb={4} w={"100%"} />}
         <Text fontSize="lg" color={"brand.400"}>
           {date}
