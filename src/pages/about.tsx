@@ -72,8 +72,8 @@ export default function About() {
                       student from Germany. I love to code and I'm always
                       looking for new projects to work on. Most of my time I
                       spend working on my projects für competitions, like Jugend
-                      forscht, or STARTUPTEENS. Most of projects are open source
-                      and can be found on my GitHub profile. I started
+                      forscht, or STARTUPTEENS. Most of my projects are open
+                      source and can be found on my GitHub profile. I started
                       programming at the age of only 8 years with the visual
                       programming language Scratch. After a few years I started
                       to learn Java and created my first desktop applications. A
