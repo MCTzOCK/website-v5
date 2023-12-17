@@ -160,7 +160,7 @@ export const projects: {
     name: "SaveWorld",
     identifier: "saveworld",
     caption:
-      "SenOS is an operating system that helps beginners and old people to use a computer. It does not require any knowledge about computers.",
+      "SaveWorld is an App that helps teenagers to get a more sustainable lifestyle.",
     links: [
       {
         url: "https://saveworld.one",
