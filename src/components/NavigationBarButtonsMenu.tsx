@@ -30,7 +30,7 @@ export default function NavigationBarButtonsMenu(props: {
         alignItems={"center"}
         justifyContent={"center"}
         gap={4}
-        flexDirection={["column", "column", "row", "row"]}
+        flexDirection={["column", "column", "column", "row"]}
       >
         <Button
           variant={"ghost"}
@@ -38,7 +38,7 @@ export default function NavigationBarButtonsMenu(props: {
           as={Link}
           href={"/"}
           onClick={props.onClose}
-          w={["100%", "auto"]}
+          w={["100%", "100%", "100%", "auto"]}
           size={"lg"}
           justifyContent={"start"}
         >
@@ -50,7 +50,7 @@ export default function NavigationBarButtonsMenu(props: {
           as={Link}
           href={"/about"}
           onClick={props.onClose}
-          w={["100%", "auto"]}
+          w={["100%", "100%", "100%", "auto"]}
           size={"lg"}
           justifyContent={"start"}
         >
@@ -62,7 +62,7 @@ export default function NavigationBarButtonsMenu(props: {
           as={Link}
           href={"/projects"}
           onClick={props.onClose}
-          w={["100%", "auto"]}
+          w={["100%", "100%", "100%", "auto"]}
           size={"lg"}
           justifyContent={"start"}
         >
@@ -74,7 +74,7 @@ export default function NavigationBarButtonsMenu(props: {
           as={Link}
           href={"/contact"}
           onClick={props.onClose}
-          w={["100%", "auto"]}
+          w={["100%", "100%", "100%", "auto"]}
           size={"lg"}
           justifyContent={"start"}
         >
@@ -86,7 +86,7 @@ export default function NavigationBarButtonsMenu(props: {
           as={Link}
           href={"/blog"}
           onClick={props.onClose}
-          w={["100%", "auto"]}
+          w={["100%", "100%", "100%", "auto"]}
           size={"lg"}
           justifyContent={"start"}
         >

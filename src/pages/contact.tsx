@@ -43,7 +43,7 @@ export default function Contact() {
           >
             Contact
           </Heading>
-          <Text fontSize={"2xl"} maxW={["100%", "30%"]}>
+          <Text fontSize={"2xl"} maxW={["100%", "90%", "90%", "90%", "30%"]}>
             I am always happy to hear from you.
             <br />
             There are several ways to contact me:

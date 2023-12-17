@@ -49,7 +49,11 @@ export default function Index() {
           >
             Ben Siebert
           </Heading>
-          <Text fontSize={"xl"} maxW={["100%", "30%"]} mt={6}>
+          <Text
+            fontSize={"xl"}
+            maxW={["100%", "90%", "90%", "90%", "30%"]}
+            mt={6}
+          >
             Hey, I'm Ben Siebert, a 16 year old software engineer and student
             from Germany. I love to code and I'm always looking for new projects
             to work on. Most of my time I spend working on my projects für

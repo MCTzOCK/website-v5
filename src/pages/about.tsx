@@ -41,7 +41,7 @@ export default function About() {
             p={8}
             rounded={"xl"}
             shadow={"xl"}
-            maxW={["100%", "90%", "40%"]}
+            maxW={["100%", "90%", "90%", "90%", "60%"]}
             w={"100%"}
           >
             <Heading fontSize={"4xl"} fontWeight={1000}>
@@ -56,7 +56,13 @@ export default function About() {
               <TabPanels>
                 <TabPanel p={0}>
                   <Flex mt={8} gap={4} direction={["column", "row"]}>
-                    <Image src={"/assets/images/ben/3.jpeg"} rounded={"xl"} />
+                    <Image
+                      src={"/assets/images/ben/3.jpeg"}
+                      rounded={"xl"}
+                      maxW={"300px"}
+                      h={"100%"}
+                      aspectRatio={"1/1"}
+                    />
                     <Text fontSize={"xl"}>
                       I am Ben Siebert, a 16 year old software engineer and
                       student from Germany. I love to code and I'm always
@@ -85,7 +91,7 @@ export default function About() {
                           "https://download.ben-siebert.com/projects/decryptor/logo.jpg",
                         link: {
                           text: "View project",
-                          url: "/project/decryptor",
+                          url: "/projects#decryptor",
                         },
                       },
                       {
@@ -98,7 +104,7 @@ export default function About() {
                           "https://avatars.githubusercontent.com/u/69637254?s=200&v=4",
                         link: {
                           text: "View project",
-                          url: "/project/senos",
+                          url: "/projects#senos",
                         },
                       },
                       {
@@ -111,19 +117,19 @@ export default function About() {
                           "https://avatars.githubusercontent.com/u/83610050?s=200&v=4",
                         link: {
                           text: "View project",
-                          url: "/project/incode",
+                          url: "/projects#incode",
                         },
                       },
                       {
                         id: 4,
                         date: "2022-Present",
                         description:
-                          "CodeUp is a platform for learning programming. It includes a full features online IDE and much more.",
+                          "CodeUp is a platform for learning programming. It includes a full featured online IDE and much more.",
                         title: "CodeUp",
                         image: "https://codeup.space/codeup.png",
                         link: {
                           text: "View project",
-                          url: "/project/codeup",
+                          url: "/projects#codeup",
                         },
                       },
                       {
@@ -136,7 +142,7 @@ export default function About() {
                           "https://content.saveworld.one/assets/7de3ae7c-0d86-416a-a761-93403ae870ca",
                         link: {
                           text: "View project",
-                          url: "/project/saveworld",
+                          url: "/projects#saveworld",
                         },
                       },
                     ]}
@@ -192,7 +198,7 @@ export default function About() {
                         date: "2022 - InCode",
                         title: "Jugend forscht",
                         description:
-                          "Speciel prize for the most creatively valuable work",
+                          "Special prize for the most creatively valuable work",
                       },
                       {
                         id: 4,
