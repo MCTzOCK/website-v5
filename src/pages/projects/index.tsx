@@ -30,6 +30,7 @@ import {
 import { FaExternalLinkSquareAlt, FaGithub } from "react-icons/fa";
 import { FaDownload } from "react-icons/fa6";
 import { projects } from "@/projects";
+import Link from "next/link";
 
 export default function Index() {
   return (
@@ -59,7 +60,12 @@ export default function Index() {
               profile.
             </Text>
             <ButtonGroup w={"100%"} justifyContent={"center"}>
-              <Button leftIcon={<FaGithub />} size={"lg"}>
+              <Button
+                leftIcon={<FaGithub />}
+                size={"lg"}
+                as={Link}
+                href={"https://github.com/MCTzOCK"}
+              >
                 GitHub
               </Button>
             </ButtonGroup>
