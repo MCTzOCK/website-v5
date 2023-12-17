@@ -16,7 +16,9 @@ export default function DocumentLayout() {
   return (
     <>
       <Html>
-        <Head></Head>
+        <Head>
+          <link rel="shortcut icon" href="/favicon.jpeg" />
+        </Head>
         <NextScript />
         <Main />
       </Html>
