@@ -38,7 +38,7 @@ const Footer = () => {
               Ben Siebert
             </Heading>
             <Text mt={2} color="white" fontSize="lg">
-              Made with &#128153; and ☕
+              Made with ❤️ and ☕
             </Text>
           </Box>
           <HStack
