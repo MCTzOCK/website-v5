@@ -10,7 +10,13 @@
 
 import * as React from "react";
 import { Button, Flex } from "@chakra-ui/react";
-import { FaBox, FaHome, FaProjectDiagram, FaRProject, FaUser } from "react-icons/fa";
+import {
+  FaBox,
+  FaHome,
+  FaProjectDiagram,
+  FaRProject,
+  FaUser,
+} from "react-icons/fa";
 import Link from "next/link";
 import {
   FaDiagramProject,
@@ -96,7 +102,7 @@ export default function NavigationBarButtonsMenu(props: {
           variant={"ghost"}
           leftIcon={<FaUser />}
           as={Link}
-          href={"/blog"}
+          href={"https://my.ben-siebert.com"}
           onClick={props.onClose}
           w={["100%", "100%", "100%", "auto"]}
           size={"lg"}
