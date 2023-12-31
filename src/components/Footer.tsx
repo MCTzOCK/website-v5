@@ -58,6 +58,21 @@ const Footer = () => {
                 <CustomLink href={"/projects"}>Projects</CustomLink>
               </VStack>
             </VStack>
+            <VStack spacing={4} alignItems="flex-start">
+              <Text fontSize="md" fontWeight="bold">
+                Legal
+              </Text>
+              <VStack spacing={2} alignItems="flex-start" color="white">
+                <CustomLink href={"/about"}>Legal Notice</CustomLink>
+                <CustomLink href={"/contact"}>Privacy Policy</CustomLink>
+                <CustomLink href={"#"} visibility={"hidden"}>
+                  Spacer
+                </CustomLink>
+                <CustomLink href={"#"} visibility={"hidden"}>
+                  Spacer
+                </CustomLink>
+              </VStack>
+            </VStack>
           </HStack>
         </Stack>
         <Divider my={4} />
