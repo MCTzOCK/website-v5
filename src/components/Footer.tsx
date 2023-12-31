@@ -63,8 +63,8 @@ const Footer = () => {
                 Legal
               </Text>
               <VStack spacing={2} alignItems="flex-start" color="white">
-                <CustomLink href={"/about"}>Legal Notice</CustomLink>
-                <CustomLink href={"/contact"}>Privacy Policy</CustomLink>
+                <CustomLink href={"/legal-notice"}>Legal Notice</CustomLink>
+                <CustomLink href={"/privacy-policy"}>Privacy Policy</CustomLink>
                 <CustomLink href={"#"} visibility={"hidden"}>
                   Spacer
                 </CustomLink>
