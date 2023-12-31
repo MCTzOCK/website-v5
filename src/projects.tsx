@@ -88,7 +88,7 @@ export const projects: {
       "InCode is a programming language which can be used to create websites. It uses natural language.",
     links: [
       {
-        url: "https://github.com/coolescoden/InCode",
+        url: "https://github.com/InCodeDevs/InCode",
         icon: <FaGithub />,
         text: "Source",
       },
