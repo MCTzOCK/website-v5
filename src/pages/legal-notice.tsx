@@ -28,7 +28,7 @@ export default function LegalNotice() {
   return (
     <>
       <Head>
-        <title>Impressum - CodeUp</title>
+        <title>Legal Notice | Ben Siebert - Software Engineer & Student</title>
       </Head>
       <Flex align="center" justify="center" w={"100%"} minH={[0, "100vh"]}>
         <Stack
