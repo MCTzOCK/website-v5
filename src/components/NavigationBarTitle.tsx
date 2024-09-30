@@ -20,7 +20,7 @@ export default function NavigationBarTitle() {
           src={"/assets/images/ben/2.jpeg"}
           alt={"Ben Siebert"}
           width={20}
-          rounded={"lg"}
+          rounded={"2xl"}
           shadow={"xl"}
         />
       </Link>

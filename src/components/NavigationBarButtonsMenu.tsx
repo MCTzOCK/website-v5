@@ -52,7 +52,7 @@ export default function NavigationBarButtonsMenu(props: {
         </Button>
         <Button
           variant={"ghost"}
-          leftIcon={<FaPerson />}
+          leftIcon={<FaUser />}
           as={Link}
           href={"/about"}
           onClick={props.onClose}
@@ -97,18 +97,6 @@ export default function NavigationBarButtonsMenu(props: {
           justifyContent={"start"}
         >
           Blog
-        </Button>
-        <Button
-          variant={"ghost"}
-          leftIcon={<FaUser />}
-          as={Link}
-          href={"https://my.ben-siebert.com"}
-          onClick={props.onClose}
-          w={["100%", "100%", "100%", "auto"]}
-          size={"lg"}
-          justifyContent={"start"}
-        >
-          Account
         </Button>
       </Flex>
     </>

@@ -20,7 +20,6 @@ import {
 } from "@chakra-ui/react";
 import { FaEnvelope } from "react-icons/fa6";
 import Link from "next/link";
-import { NextSeo } from "next-seo";
 import Head from "next/head";
 
 export default function Index() {
@@ -43,8 +42,8 @@ export default function Index() {
           <Image
             src={"/assets/images/ben/2.jpeg"}
             alt={"Ben Siebert"}
-            width={[200, 64]}
-            rounded={"lg"}
+            width={[200, 300]}
+            rounded={"3xl"}
             shadow={"xl"}
           />
           <Heading
@@ -55,17 +54,18 @@ export default function Index() {
             Ben Siebert
           </Heading>
           <Text
-            fontSize={"xl"}
+            fontSize={"2xl"}
             maxW={["100%", "90%", "90%", "90%", "30%"]}
+            textAlign={["left", "left", "center"]}
             mt={6}
+            mb={4}
           >
             Hey, I'm Ben Siebert, a 17 year old software engineer and student
             from Germany. I love to code and I'm always looking for new projects
             to work on. Most of my time I spend working on my projects für
-            competitions, like Jugend forscht, or STARTUPTEENS. Most of projects
-            are open source and can be found on my GitHub profile. If you are
-            interested in my work or my person, feel free to look around this
-            website. If you want to work with me, feel free to contact me!
+            competitions, like Jugend forscht, or STARTUPTEENS. If you are
+            interested in my work or my person, feel free to look around. Or
+            contact me directly.
           </Text>
           <ButtonGroup>
             <Button

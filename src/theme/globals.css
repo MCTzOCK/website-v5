@@ -11,3 +11,7 @@
     font-family: Geist;
     src: url("/assets/fonts/geist/GeistVariableVF.ttf") format("truetype");
 }
+
+* {
+    scroll-behavior: smooth;
+}
