@@ -11,10 +11,12 @@
 import * as React from "react";
 import {
   Box,
+  Button,
   Flex,
   Grid,
   Heading,
   HStack,
+  IconButton,
   Image,
   Progress,
   Tab,
@@ -26,8 +28,14 @@ import {
 } from "@chakra-ui/react";
 import Timeline from "@/components/Timeline";
 import Head from "next/head";
-import { FaBirthdayCake, FaDocker } from "react-icons/fa";
 import {
+  FaBirthdayCake,
+  FaDocker,
+  FaExternalLinkAlt,
+  FaGithub,
+} from "react-icons/fa";
+import {
+  FaBook,
   FaCode,
   FaCss3,
   FaFlag,
@@ -442,191 +450,251 @@ export default function About() {
                   </>
                 ))}
             </Grid>
-            <Tabs colorScheme={"brand"} size={"md"} isFitted mt={2} p={0}>
-              <TabList>
-                <Tab>Overview</Tab>
-                <Tab>Projects</Tab>
-                <Tab>Awards</Tab>
-              </TabList>
-              <TabPanels>
-                <TabPanel p={0}>
-                  <Flex mt={8} gap={4} direction={["column", "row"]}>
-                    <Image
-                      src={"/assets/images/ben/3.jpeg"}
-                      rounded={"xl"}
-                      maxW={"300px"}
-                      h={"100%"}
-                      aspectRatio={"1/1"}
-                    />
-                    <Text fontSize={"xl"}>
-                      I am Ben Siebert, a 16 year old software engineer and
-                      student from Germany. I love to code and I'm always
-                      looking for new projects to work on. Most of my time I
-                      spend working on my projects für competitions, like Jugend
-                      forscht, or STARTUPTEENS. Most of my projects are open
-                      source and can be found on my GitHub profile. I started
-                      programming at the age of only 8 years with the visual
-                      programming language Scratch. After a few years I started
-                      to learn Java and created my first desktop applications. A
-                      few years forward I learned how to develop fullstack web
-                      applications and this is what I do today.
-                    </Text>
-                  </Flex>
-                </TabPanel>
-                <TabPanel>
-                  <Timeline
-                    milestones={[
+            <Heading
+              size={"lg"}
+              fontFamily={"monospace"}
+              id={"projects-awards"}
+              mt={8}
+            >
+              Projects & Awards
+            </Heading>
+            <Grid
+              templateColumns={[
+                "repeat(1, 1fr)",
+                "repeat(2, 1fr)",
+                "repeat(3, 1fr)",
+                "repeat(4, 1fr)",
+              ]}
+              gap={4}
+              mt={8}
+            >
+              {(
+                [
+                  {
+                    name: "Decryptor",
+                    color: "green.500",
+                    logo: "https://download.ben-siebert.com/projects/decryptor/logo.jpg",
+                    description:
+                      "The Decryptor is a tool to encrypt and decrypt any text with multiple algorithms.",
+                    source: "https://github.com/MCTzOCK/Decryptor",
+                    paper:
+                      "https://download.ben-siebert.com/projects/decryptor/Decryptor_essay_2020.pdf",
+                    awards: [
                       {
-                        id: 1,
-                        date: "2019-2020",
-                        description:
-                          'For the first time I participated at the youth competition "Jugend forscht" and won the 3rd prize at the regional competition',
-                        title: "Decryptor",
-                        image:
-                          "https://download.ben-siebert.com/projects/decryptor/logo.jpg",
-                        link: {
-                          text: "View project",
-                          url: "/projects#decryptor",
-                        },
+                        name: "3rd regional prize",
+                        date: "2020",
+                        issuer: "Jugend forscht e.V.",
+                      },
+                    ],
+                  },
+                  {
+                    name: "SenOS",
+                    color: "orange.500",
+                    logo: "https://avatars.githubusercontent.com/u/69637254?s=200&v=4",
+                    description:
+                      "SenOS is an operating system that helps elderly people to use a computer.",
+                    source: "https://github.com/MCTzOCK/SenOS",
+                    paper:
+                      "https://download.ben-siebert.com/projects/senos/SenOS_essay_2021.pdf",
+                    awards: [
+                      {
+                        name: "1st regional prize",
+                        date: "2021",
+                        issuer: "Jugend forscht e.V.",
+                      },
+                    ],
+                  },
+                  {
+                    name: "InCode",
+                    color: "blackAlpha.900",
+                    logo: "https://avatars.githubusercontent.com/u/83610050?s=200&v=4",
+                    description:
+                      "InCode is a full-featured simple programming language that allows creating websites with natural language.",
+                    source: "https://github.com/InCodeDevs/InCode",
+                    view: "https://incode.ben-siebert.com",
+                    paper:
+                      "https://download.ben-siebert.com/projects/incode/InCode_essay_2022.pdf",
+                    awards: [
+                      {
+                        name: "1st regional prize",
+                        date: "2022",
+                        issuer: "Jugend forscht e.V.",
                       },
                       {
-                        id: 2,
-                        date: "2020-2021",
-                        description:
-                          "With a friend of mine I created the SenOS operating system which helps aged people to use a computer.",
-                        title: "SenOS",
-                        image:
-                          "https://avatars.githubusercontent.com/u/69637254?s=200&v=4",
-                        link: {
-                          text: "View project",
-                          url: "/projects#senos",
-                        },
+                        name: "1st landwide prize",
+                        date: "2022",
+                        issuer: "Jugend forscht e.V.",
                       },
                       {
-                        id: 3,
-                        date: "2021-2022",
-                        description:
-                          "With a friend of mine I created the InCode programming language which allows creating websites with natural language",
-                        title: "InCode",
-                        image:
-                          "https://avatars.githubusercontent.com/u/83610050?s=200&v=4",
-                        link: {
-                          text: "View project",
-                          url: "/projects#incode",
-                        },
+                        name: "Special prize for the most creatively valuable work",
+                        date: "2022",
+                        issuer:
+                          "Ministerium für Schule und Bildung des Landes Nordrhein-Westfalen",
+                      },
+                    ],
+                  },
+                  {
+                    name: "CodeUp",
+                    color: "#f7de1f",
+                    logo: "https://codeup.space/codeup.png",
+                    description:
+                      "CodeUp is an all-in-one platform for learning programming. It includes a full featured online IDE and much more.",
+                    view: "https://codeup.space",
+                    paper:
+                      "https://download.ben-siebert.com/projects/codeup/CodeUp_essay_2023.pdf",
+                    awards: [
+                      {
+                        name: "1st regional prize",
+                        date: "2023",
+                        issuer: "Jugend forscht e.V.",
                       },
                       {
-                        id: 4,
-                        date: "2022-Present",
-                        description:
-                          "CodeUp is a platform for learning programming. It includes a full featured online IDE and much more.",
-                        title: "CodeUp",
-                        image: "https://codeup.space/codeup.png",
-                        link: {
-                          text: "View project",
-                          url: "/projects#codeup",
-                        },
+                        name: "Special prize",
+                        date: "2023",
+                        issuer: "Hengst Filtration SE",
                       },
                       {
-                        id: 5,
-                        date: "2023-Present",
-                        description:
-                          "SaveWorld is an app which helps people to get a more sustainable lifestyle.",
-                        title: "SaveWorld",
-                        image:
-                          "https://content.saveworld.one/assets/7de3ae7c-0d86-416a-a761-93403ae870ca",
-                        link: {
-                          text: "View project",
-                          url: "/projects#saveworld",
-                        },
-                      },
-                    ]}
-                    title={""}
-                  />
-                </TabPanel>
-                <TabPanel>
-                  <Timeline
-                    milestones={[
-                      {
-                        id: 11,
-                        date: "2023 - CodeUp",
-                        title: "STARTUPTEENS",
-                        description: "2nd prize at the national competition",
+                        name: "1st landwide prize",
+                        date: "2023",
+                        issuer: "Jugend forscht e.V.",
                       },
                       {
-                        id: 10,
-                        date: "2023 - CodeUp",
-                        title: "Jugend forscht",
-                        description:
-                          "Participation at the nationwide competition",
-                        image: "/assets/images/ben/8.jpg",
+                        name: "JugendUnternimmt Summerschool",
+                        date: "2023",
+                        issuer: "Jugend forscht e.V.",
                       },
                       {
-                        id: 9,
-                        date: "2023 - CodeUp",
-                        title: "Jugend forscht",
-                        description:
-                          "Special prize: participation at the Summer Academy JugendUnternimmt",
+                        name: "2nd nationwide place",
+                        date: "2023",
+                        issuer: "STARTUP TEENS Netzwerk e.V.",
+                      },
+                    ],
+                  },
+                  {
+                    name: "SaveWorld",
+                    color: "#22dd6c",
+                    logo: "https://www.saveworld.one/logo.png",
+                    description:
+                      "SaveWorld aims to help people to get a more sustainable lifestyle.",
+                    view: "https://saveworld.one",
+                    awards: [
+                      {
+                        name: "Interdisziplinärer Regionalsieger Jugend forscht Dortmund",
+                        date: "2024",
+                        issuer: "Jugend forscht e.V.",
                       },
                       {
-                        id: 8,
-                        date: "2023 - CodeUp",
-                        title: "Jugend forscht",
-                        description: "1st prize at the landwide competition",
-                        image: "/assets/images/ben/7.jpg",
+                        name: "Sonderpreis Umwelt",
+                        date: "2024",
+                        issuer:
+                          "Ministerium für Umwelt, Naturschutz und Verkehr des Landes Nordrhein-Westfalen",
                       },
                       {
-                        id: 7,
-                        date: "2023 - CodeUp",
-                        title: "Jugend forscht",
-                        description: "Special prize by Hengst Filtration SE",
-                        image: "/assets/images/ben/6.jpg",
+                        name: "2nd place Sonderpreis Umwelt",
+                        date: "2024",
+                        issuer: "Jugend forscht e.V.",
                       },
                       {
-                        id: 6,
-                        date: "2023 - CodeUp",
-                        title: "Jugend forscht",
-                        description: "1st prize at the regional competition",
+                        name: "Sonderpreis BUW I",
+                        date: "2023",
+                        issuer: "BundesUmweltWettbewerb",
                       },
-                      {
-                        id: 5,
-                        date: "2022 - InCode",
-                        title: "Jugend forscht",
-                        description:
-                          "Special prize for the most creatively valuable work",
-                      },
-                      {
-                        id: 4,
-                        date: "2022 - InCode",
-                        title: "Jugend forscht",
-                        description: "1st prize at the landwide competition",
-                      },
-                      {
-                        id: 3,
-                        date: "2022 - InCode",
-                        title: "Jugend forscht",
-                        description: "1st prize at the regional competition",
-                      },
-                      {
-                        id: 2,
-                        date: "2021 - SenOS",
-                        title: "Jugend forscht",
-                        description: "1st prize at the regional competition",
-                      },
-                      {
-                        id: 1,
-                        date: "2020 - Decryptor",
-                        title: "Jugend forscht",
-                        description: "3rd prize at the regional competition",
-                        image:
-                          "https://download.ben-siebert.com/ben/JuFo2020-1.jpg",
-                      },
-                    ]}
-                    title={""}
-                  />
-                </TabPanel>
-              </TabPanels>
-            </Tabs>
+                    ],
+                  },
+                ] as {
+                  name: string;
+                  logo: string;
+                  color: string;
+                  description: string;
+                  source?: string;
+                  paper?: string;
+                  view?: string;
+                  awards: {
+                    name: string;
+                    date: string;
+                    issuer: string;
+                  }[];
+                }[]
+              ).map((project) => (
+                <>
+                  <Box bg={"gray.900"} rounded={"md"} p={2}>
+                    <Flex
+                      fontSize={"5xl"}
+                      color={project.color}
+                      alignItems={"center"}
+                      justifyContent={"space-between"}
+                    >
+                      <Heading size={"lg"} color={project.color}>
+                        {project.name}
+                      </Heading>
+                      <Image
+                        src={project.logo}
+                        w={12}
+                        h={12}
+                        rounded={"full"}
+                      />
+                    </Flex>
+                    <Text>{project.description}</Text>
+                    <HStack gap={4} mt={2}>
+                      {project.source && (
+                        <IconButton
+                          aria-label={"GitHub"}
+                          as={"a"}
+                          href={project.source}
+                          color={project.color}
+                          icon={<FaGithub />}
+                          variant={"ghost"}
+                          size={"lg"}
+                        />
+                      )}
+                      {project.paper && (
+                        <IconButton
+                          aria-label={"Paper"}
+                          as={"a"}
+                          href={project.paper}
+                          color={project.color}
+                          icon={<FaBook />}
+                          variant={"ghost"}
+                          size={"lg"}
+                        />
+                      )}
+                      {project.view && (
+                        <IconButton
+                          aria-label={"View"}
+                          as={"a"}
+                          href={project.view}
+                          color={project.color}
+                          icon={<FaExternalLinkAlt />}
+                          variant={"ghost"}
+                          size={"lg"}
+                        />
+                      )}
+                    </HStack>
+                    <Heading
+                      size={"sm"}
+                      mt={2}
+                      color={project.color}
+                      display={project.awards.length > 0 ? "block" : "none"}
+                    >
+                      Awards
+                    </Heading>
+                    {project.awards.map((award) => (
+                      <Box bg={"gray.800"} p={2} rounded={"md"} mt={2}>
+                        <Text fontFamily={"monospace"} fontSize={"md"}>
+                          {award.date}
+                        </Text>
+                        <Text fontSize={"lg"} color={project.color}>
+                          {award.name}
+                        </Text>
+                        <Text>
+                          by <b>{award.issuer}</b>
+                        </Text>
+                      </Box>
+                    ))}
+                  </Box>
+                </>
+              ))}
+            </Grid>
           </Box>
         </Flex>
       </Box>

@@ -66,7 +66,7 @@ export default function NavigationBarButtonsMenu(props: {
           variant={"ghost"}
           leftIcon={<FaBox />}
           as={Link}
-          href={"/projects"}
+          href={"/about#projects-awards"}
           onClick={props.onClose}
           w={["100%", "100%", "100%", "auto"]}
           size={"lg"}
