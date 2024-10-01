@@ -294,19 +294,19 @@ export default function About() {
                   {
                     name: "express.js",
                     icon: <SiExpress />,
-                    color: "#000000",
+                    color: "#FFFFFF",
                     level: 100,
                   },
                   {
                     name: "Next.js",
                     icon: <TbBrandNextjs />,
-                    color: "#000000",
+                    color: "#FFFFFF",
                     level: 100,
                   },
                   {
                     name: "Socket.IO",
                     icon: <TbBrandSocketIo />,
-                    color: "#000000",
+                    color: "#FFFFFF",
                     level: 80,
                   },
                   {
@@ -318,7 +318,7 @@ export default function About() {
                   {
                     name: "Fastify",
                     icon: <SiFastify />,
-                    color: "#000000",
+                    color: "#FFFFFF",
                     level: 75,
                   },
                   {
@@ -372,7 +372,7 @@ export default function About() {
                   {
                     name: "Unity",
                     icon: <BiLogoUnity />,
-                    color: "#000000",
+                    color: "#FFFFFF",
                     level: 75,
                   },
                   {
@@ -390,7 +390,7 @@ export default function About() {
                   {
                     name: "x86 Assembly",
                     icon: <TbAssembly />,
-                    color: "#000000",
+                    color: "#FFFFFF",
                     level: 20,
                   },
                   {
@@ -506,7 +506,7 @@ export default function About() {
                   },
                   {
                     name: "InCode",
-                    color: "blackAlpha.900",
+                    color: "white",
                     logo: "https://avatars.githubusercontent.com/u/83610050?s=200&v=4",
                     description:
                       "InCode is a full-featured simple programming language that allows creating websites with natural language.",
