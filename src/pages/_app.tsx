@@ -9,13 +9,13 @@
  */
 
 import * as React from "react";
-import { Component } from "react";
 import { ChakraProvider } from "@chakra-ui/react";
 import { theme } from "@/theme/chakra";
 import NavigationBar from "@/components/NavigationBar";
 import Footer from "@/components/Footer";
 import "@/theme/globals.css";
 import { NextSeo } from "next-seo";
+import Script from "next/script";
 
 export default function AppLayout({
   Component,
@@ -53,6 +53,7 @@ export default function AppLayout({
         }}
         themeColor={"#2378DC"}
       />
+      <Script src="https://observability.codeup.space/api/analytics/script?appId=67236c2ad0067b3a2d5029ab" />
       <ChakraProvider theme={theme}>
         <NavigationBar />
         <Component {...pageProps} />
