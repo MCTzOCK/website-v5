@@ -60,7 +60,7 @@ export default function Index() {
             mt={6}
             mb={4}
           >
-            Hey, I'm Ben Siebert, a 17 year old software engineer and student
+            Hey, I'm Ben Siebert, a 18 year old software engineer and student
             from Germany. I love to code and I'm always looking for new projects
             to work on. Most of my time I spend working on my projects für
             competitions, like Jugend forscht, or STARTUPTEENS. If you are
