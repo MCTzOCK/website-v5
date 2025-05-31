@@ -596,7 +596,7 @@ export default function About() {
                       },
                       {
                         name: "Sonderpreis BUW I",
-                        date: "2023",
+                        date: "2024",
                         issuer: "BundesUmweltWettbewerb",
                       },
                     ],
