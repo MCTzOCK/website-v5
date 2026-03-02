@@ -133,7 +133,7 @@ export default function About() {
                     {
                       color: "green.500",
                       icon: <FaBirthdayCake />,
-                      text: "17 years old",
+                      text: "18 years old",
                     },
                     {
                       color: "orange.500",
@@ -143,7 +143,7 @@ export default function About() {
                     {
                       color: "red.500",
                       icon: <FaCode />,
-                      text: "9 years of coding",
+                      text: "10+ years of coding",
                     },
                     {
                       color: "blue.500",
